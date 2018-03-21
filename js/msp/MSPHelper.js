@@ -1272,6 +1272,22 @@ var mspHelper = (function (gui) {
             case MSPCodes.MSP_WP_MISSION_LOAD:
                 console.log('Mission load');
                 break;
+            case MSPCodes.MSP2_INAV_OSD_LAYOUTS:
+                break;
+            case MSPCodes.MSP2_INAV_OSD_SET_LAYOUT_ITEM:
+                console.log('OSD layout item saved');
+                break;
+            case MSPCodes.MSP2_INAV_OSD_ALARMS:
+                break;
+            case MSPCodes.MSP2_INAV_OSD_SET_ALARMS:
+                console.log('OSD alarms saved');
+                break;
+            case MSPCodes.MSP2_INAV_OSD_PREFERENCES:
+                break;
+            case MSPCodes.MSP2_INAV_OSD_SET_PREFERENCES:
+                console.log('OSD preferences saved');
+                break;
+
             default:
                 console.log('Unknown code detected: ' + dataHandler.code);
         } else {
